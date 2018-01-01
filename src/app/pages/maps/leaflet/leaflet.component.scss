@@ -1,0 +1,18 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+  nb-card-body {
+    padding: 0 0 0 0;
+  }
+
+  /deep/ .leaflet-container {
+    width: 100%;
+    height: calc(#{nb-theme(sidebar-height)} - #{nb-theme(header-height)} - #{nb-theme(sidebar-header-gap)}) !important;
+
+    .scrollable {
+      padding-top: 0;
+    }
+  }
+
+}
